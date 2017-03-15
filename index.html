@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TestTask</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYsYbIbEOiNMKKuRhSYZSh2AQ01DQ6Ens"></script>
+
+</head>
+<body class= "main">
+
+
+    <div class="wrapper">
+        <header class="row">
+            <h1 class="text-muted"> Test task application </h1>
+            <div class="col-md-12">
+                <ul class = "container clearfix hidden"></ul>
+            </div>
+        </header>
+
+        <main>
+            <div class="row">
+                <div class="col-md-4">
+                    <div id = "mainPicture" class="hidden">
+                        <img src="" alt="picture" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-3">
+            
+                </div>
+                <div class="col-md-5">
+                    <div id="googleMap" class="hidden"></div>
+                </div>
+            </div>
+<!--             <div class="row">
+                <input type="text" id = "coord">
+                <button class="coordinates"></button>
+            </div> -->
+        
+        <div class="row">
+            <div class="col-md-4">
+                <h4 class="hidden">User image description ( 
+                    <a id = "editInfo"> edit </a> ) 
+                </h4>
+            <form class="description-form hidden">
+                    <div class="form-group">
+                        <label for="image-description">Description</label>
+                        <textarea class="form-control" id="image-description" placeholder="Description"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-info">Submit</button>
+                    <button type="submit" class="btn btn-warning">Cancel</button>
+            </form>
+        </div>
+    </div>
+    </main>
+
+    <footer class="row">
+        <div class="col-md-6">
+            <div class="form-inline">
+                <input type="file" name="image" class="file">
+                <div class="form-group input-group">
+                    <input type="text" class="form-control input-lg" disabled placeholder="No file chosen">
+                    <span class="input-group-btn">
+                        <button class="browse btn btn-info input-lg" type="button" id = "browse"><i class="glyphicon glyphicon-search"></i> Browse</button>
+                    </span>
+                </div>
+                <div class="form-group input-group">
+                    <button class="btn btn-info input-lg" type="button" id = "load">Upload and preview</button>
+                </div>
+            </div>
+    </footer>
+    </div>
+    <script type="text/javascript" src="./exif/exif.js"></script>
+    <script type="text/javascript" src="model.js"></script>
+    <script type="text/javascript" src="createMap.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
+

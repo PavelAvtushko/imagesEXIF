@@ -1,0 +1,114 @@
+body.main {
+    background-color: #e4e3eb;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul.container {
+    border: 1px solid grey;
+    width: 100%;
+    overflow: hidden;
+    overflow-x: scroll;
+  /*  box-sizing: border-box;*/
+    white-space:nowrap;
+    margin: 0;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.wrapper {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border: 1px solid grey;
+    padding: 15px;
+    background: white;
+}
+
+.wrapper > main {
+    flex: 1;
+}
+
+.wrapper > footer {
+    padding: 50px 0;
+}
+
+.container li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.container li a{
+    height: 100px;
+    display: inline-block;
+}
+
+.container img{
+    height: 100px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid grey;
+    opacity: 0.9;
+}
+
+.container li>a img:hover {
+   opacity: 1;
+   border-color: red;
+   transition: 0.5s;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+#mainPicture {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 20px 0;
+    float: left;
+}
+
+#mainPicture img{
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+#googleMap {
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width: 100%;
+    height: 300px;
+}
+
+#editInfo {
+    color: #5bc0de;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#editInfo:hover {
+    color: #269abc;
+}
+
+.file {
+    visibility: hidden;
+    position: absolute;
+}
+
+.description-form {
+    border: solid grey 1px;
+    border-radius: 5px;
+    padding: 15px;
+}
