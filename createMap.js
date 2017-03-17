@@ -1,4 +1,4 @@
-var mapScale = 5;
+var mapScale = 8;
 
 function Map(selector, coord) {
     var myLatlng = new google.maps.LatLng(coord.x, coord.y);
@@ -13,8 +13,11 @@ function Map(selector, coord) {
     });
 }
 
-
 Map.prototype.changeMapCoord = function(coord){
+    if (!coord.x || !coord.y) {
+        return;
+    };
+
     var newLatlng = new google.maps.LatLng(coord.x, coord.y);
     this.map.setCenter(newLatlng);
     this.marker.setMap(null);
