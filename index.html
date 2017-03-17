@@ -28,9 +28,20 @@
                     <div id = "mainPicture" class="hidden">
                         <img src="" alt="picture" class="img-responsive">
                     </div>
+                    <h4 class="hidden">User image description ( 
+                        <a id = "editInfo"> edit </a> ) 
+                    </h4>
+                    <form class="description-form hidden">
+                            <div class="form-group">
+                                <label for="image-description">Description</label>
+                                <textarea class="form-control" id="image-description" placeholder="Description"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-info">Submit</button>
+                            <button type="submit" class="btn btn-warning">Cancel</button>
+                    </form>
                 </div>
                 <div class="col-md-3">
-            
+                    <p class="ddd"></p>
                 </div>
                 <div class="col-md-5">
                     <div id="googleMap" class="hidden"></div>
@@ -40,22 +51,6 @@
                 <input type="text" id = "coord">
                 <button class="coordinates"></button>
             </div> -->
-        
-        <div class="row">
-            <div class="col-md-4">
-                <h4 class="hidden">User image description ( 
-                    <a id = "editInfo"> edit </a> ) 
-                </h4>
-            <form class="description-form hidden">
-                    <div class="form-group">
-                        <label for="image-description">Description</label>
-                        <textarea class="form-control" id="image-description" placeholder="Description"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-info">Submit</button>
-                    <button type="submit" class="btn btn-warning">Cancel</button>
-            </form>
-        </div>
-    </div>
     </main>
 
     <footer class="row">
